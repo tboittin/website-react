@@ -1,5 +1,5 @@
 import React from 'react'
-import './Navbar.scss'
+import './AppNavbar.scss'
 import logo from './logo.svg'
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
@@ -9,11 +9,11 @@ import Col from 'react-bootstrap/Col'
 
 function AppNavbar() {
     return (
-        <Navbar bg="dark" variant="dark">
-            <Col l={1}>
+        <Navbar bg="dark" variant="dark" fixed="top">
+            <Col lg={1} className="justify-content-start">
                 <Navbar.Brand href="#home"><img src={logo} className="App-logo" alt="logo" /> Logo</Navbar.Brand>
             </Col>
-            <Col>
+            <Col lg={{span: 3, offset:6}}>
                 <Nav className="mr-auto">
                     <Nav.Link href="#About">About</Nav.Link>
                     <Nav.Link href="#Portfolio">Portfolio</Nav.Link>
@@ -22,7 +22,7 @@ function AppNavbar() {
                     <Nav.Link href="#Contact">Contact</Nav.Link>
                 </Nav>
             </Col>
-            <Col>
+            <Col lg={2} className="justify-content-end">
                 <Button variant="light">
                     Go to LightMode
                 </Button>
