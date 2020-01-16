@@ -5,6 +5,7 @@ import AppNavbar from './AppNavbar';
 import AppHeader from './AppHeader';
 import Portfolio from './PortFolio';
 import Skills from './Skills';
+import Experiences from './Experiences';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <AppHeader />
       <Portfolio />
       <Skills />
+      <Experiences />
     </div>
   );
 }
