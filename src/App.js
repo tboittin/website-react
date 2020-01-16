@@ -1,9 +1,10 @@
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.scss';
 import AppNavbar from './AppNavbar';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import AppHeader from './AppHeader';
 import Portfolio from './PortFolio';
+import Skills from './Skills';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <AppNavbar />
       <AppHeader />
       <Portfolio />
+      <Skills />
     </div>
   );
 }
