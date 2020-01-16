@@ -1,4 +1,5 @@
 import React from 'react'
+import './AppHeader.scss'
 import { Jumbotron, Button } from 'react-bootstrap'
 
 function AppHeader() {
