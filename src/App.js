@@ -1,19 +1,12 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import AppNavbar from './AppNavbar';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
     <div className="App">
-      <nav className="App-nav">
-        <div className="logo">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>APP-LOGO</p>
-        </div>
-        <div className="menu">
-          
-        </div>
-      </nav>
+      <AppNavbar />
 
       <header className="App-header">
         
