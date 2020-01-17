@@ -23,7 +23,7 @@ class ScrollToTop extends Component {
             this.setState({ visible: false })
     }
 
-    ScrollToTop() {
+    scrollToTop() {
         window.scrollTo({
             top: 0,
             behavior: 'smooth'
@@ -35,7 +35,7 @@ class ScrollToTop extends Component {
         return (
             <div className="scrollToTop">
                 {visible && (
-                    <Button onClick={() => this.ScrollToTop()}>
+                    <Button onClick={() => this.scrollToTop()}>
                         Go to top
                     </Button>
                 )}

@@ -15,19 +15,49 @@ class App extends React.Component {
     this.state = {
       portfolio: [],
       skills: [],
-      experiences: []
+      experiences: [],
+      sectionOrder: [
+        {name: "header"},
+        {name: "portfolio"},
+        {name: "skills"},
+        {name: "experiences"},
+        {name: "contact"},
+      ]
     }
   }
   render() {
-    const {portfolio, skills, experiences} = this.state;
+    const {
+      portfolio,
+      skills,
+      experiences,
+      sectionOrder,
+    } = this.state;
     return (
       <div className="App">
         <AppNavbar />
-        <AppHeader />
-        <Portfolio portfolio={portfolio} />
-        <Skills skills={skills} />
-        <Experiences experiences={experiences} />
-        <Contact />
+        <AppHeader 
+          sectionOrder={sectionOrder}
+          positionOrder={0}
+        />
+        <Portfolio
+          portfolio={portfolio}
+          sectionOrder={sectionOrder}
+          positionOrder={1}
+        />
+        <Skills
+          skills={skills}
+          sectionOrder={sectionOrder}
+          positionOrder={2}
+        />
+        <Experiences
+          experiences={experiences}
+          sectionOrder={sectionOrder}
+          positionOrder={3}
+        />
+        <Contact
+          sectionOrder={sectionOrder}
+          positionOrder={4}
+        />
         <ScrollToTop />
       </div>
     );
