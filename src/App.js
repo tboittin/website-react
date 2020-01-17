@@ -8,17 +8,28 @@ import Skills from './Components/Skills';
 import Experiences from './Components/Experiences';
 import Contact from './Components/Contact';
 
-function App() {
-  return (
-    <div className="App">
-      <AppNavbar />
-      <AppHeader />
-      <Portfolio />
-      <Skills />
-      <Experiences />
-      <Contact />
-    </div>
-  );
+class App extends React.Component {
+  constructor (props) {
+    super(props);
+    this.state = {
+      portfolio: [],
+      skills: [],
+      experiences: []
+    }
+  }
+  render() {
+    const {portfolio, skills, experiences} = this.state;
+    return (
+      <div className="App">
+        <AppNavbar />
+        <AppHeader />
+        <Portfolio portfolio={portfolio} />
+        <Skills skills={skills} />
+        <Experiences experiences={experiences} />
+        <Contact />
+      </div>
+    );
+  }
 }
 
 export default App;
