@@ -1,8 +1,9 @@
 import React from 'react'
+import './Contact.scss'
 
 function Contact() {
     return(
-        <section>
+        <section id="contact">
             <p>Contact</p>
         </section>
     )

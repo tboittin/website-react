@@ -1,8 +1,9 @@
 import React from 'react'
+import './Experiences.scss'
 
 function Experiences() {
     return(
-        <section>
+        <section id="experiences">
             <p>My Experiences</p>
         </section>
     )
