@@ -13,7 +13,9 @@ class Skills extends Component {
                     sectionOrder={sectionOrder}
                     positionOrder={positionOrder}
                 />
-                <p>My skills</p>
+                <div className="skillsContent">
+                    <p>My skills</p>
+                </div>
                 <ScrollToNext
                     sectionOrder={sectionOrder}
                     positionOrder={positionOrder}

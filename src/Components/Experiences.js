@@ -12,7 +12,9 @@ class Experiences extends Component {
                     sectionOrder={sectionOrder}
                     positionOrder={positionOrder}
                 />
-                <p>My Experiences</p>
+                <div className="experiencesContent">
+                    <p>My Experiences</p>
+                </div>
                 <ScrollToNext
                     sectionOrder={sectionOrder}
                     positionOrder={positionOrder}

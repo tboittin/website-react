@@ -12,7 +12,9 @@ class Portfolio extends Component {
                     sectionOrder={sectionOrder}
                     positionOrder={positionOrder}
                 />
-                <p>This is a Portfolio</p>
+                <div className="portfolioContent">
+                    <p>This is a Portfolio</p>
+                </div>
                 <ScrollToNext
                     sectionOrder={sectionOrder}
                     positionOrder={positionOrder}

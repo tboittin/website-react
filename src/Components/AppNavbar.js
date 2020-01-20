@@ -24,7 +24,7 @@ function AppNavbar() {
             </Col>
             <Col lg={2} className="justify-content-end">
                 <Button variant="light">
-                    Go to LightMode
+                    <span className="d-none d-lg-inline">Go to </span>LightMode
                 </Button>
             </Col>
             <Col lg={1} className="justify-content-end">

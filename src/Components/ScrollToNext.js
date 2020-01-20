@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import {Button} from 'react-bootstrap'
+import {Button, Row} from 'react-bootstrap'
+import './ScrollToNext.scss'
 
 class ScrollToNext extends Component {
     constructor(props) {
@@ -37,13 +38,16 @@ class ScrollToNext extends Component {
     render () {
         const {visible} = this.state;
         return(
-            <div className="scrollToNext">
+            <div
+                className="scrollToNext d-block">
                 {visible && (
-                    <Button
-                        onClick={() => this.handleScrollToNext()}
-                    >
-                        Next
-                    </ Button>
+                    <Row className="d-flex justify-content-center align-self-end">
+                        <Button
+                            onClick={() => this.handleScrollToNext()}
+                        >
+                            Next
+                        </ Button>
+                    </Row>
                 )}
             </div>
         )

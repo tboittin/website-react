@@ -12,7 +12,9 @@ class Contact extends Component {
                     sectionOrder={sectionOrder}
                     positionOrder={positionOrder}
                 />
-                <p>Contact</p>
+                <div className="contactContent">
+                    <p>Contact</p>
+                </div>
                 <ScrollToNext
                     sectionOrder={sectionOrder}
                     positionOrder={positionOrder}
