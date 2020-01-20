@@ -13,7 +13,7 @@ function AppNavbar() {
             <Col lg={1} className="justify-content-start">
                 <Navbar.Brand href="#home"><img src={logo} className="App-logo" alt="logo" /> Logo</Navbar.Brand>
             </Col>
-            <Col lg={{span: 3, offset:6}}>
+            <Col lg={{span: 3, offset:5}}>
                 <Nav className="mr-auto">
                     <Nav.Link href="#About">About</Nav.Link>
                     <Nav.Link href="#Portfolio">Portfolio</Nav.Link>
@@ -25,6 +25,11 @@ function AppNavbar() {
             <Col lg={2} className="justify-content-end">
                 <Button variant="light">
                     Go to LightMode
+                </Button>
+            </Col>
+            <Col lg={1} className="justify-content-end">
+                <Button variant="dark">
+                    EN
                 </Button>
             </Col>
         </Navbar>
