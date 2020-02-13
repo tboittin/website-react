@@ -2,15 +2,17 @@ import React, { Component } from 'react'
 import './Portfolio.scss'
 import ScrollToNext from './Navigation/ScrollToNext'
 import ScrollToPrevious from './Navigation/ScrollToPrevious'
-import { Card, Button, Row, Col } from 'react-bootstrap'
+import { Card, Button, Col } from 'react-bootstrap'
+
+import colmarThumb from './colmaracademy-responsivewebpic-thumb.png'
 
 const projects = [
     {
-        id:1,
+        id: 1,
         title: "Colmar Academy",
         course: "CodeCademy - Web Development Path",
         description: "A flexbox website featuring the non existent Colmar Academy.",
-        image:'././img/colmaracademy-responsivewebpic-thumb.png',
+        image: {colmarThumb},
         link:"",
     },
     {
@@ -25,7 +27,7 @@ const projects = [
         id: 3,
         title: "FitActive",
         course: "OpenClassroom - Create a modern and professional website with WordPress",
-        description: `It features the FitActive Gym. Homepage & blog page. I made this WordPress page into a static page in order to integrate it to my webpage.`,
+        description: "It features the FitActive Gym. Homepage & blog page. I made this WordPress page into a static page in order to integrate it to my webpage.",
         image:"",
         link:"",
     },
@@ -61,7 +63,7 @@ class ProjectsRender extends Component {
             <React.Fragment>
                 {projects.map(project => (
                     <Card key={project.id} className="h-25 w-25 d-inline-flex flex-wrap m-2">
-                        <Card.Img variant="top" src="colmaracademy-responsivewebpic-thumb.png"/>
+                        <Card.Img variant="top" src={project.image}/>
                         <a href={project.link}><Card.Title> {project.title} </Card.Title></a>
                         <Card.Text> {project.description} </Card.Text>
                         <Button variant="primary">Have a look !</Button>
