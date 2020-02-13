@@ -7,7 +7,7 @@ import Portfolio from './Components/PortFolio';
 import Skills from './Components/Skills';
 import Experiences from './Components/Experiences';
 import Contact from './Components/Contact';
-import ScrollToTop from './Components/ScrollToTop';
+import ScrollToTop from './Components/Navigation/ScrollToTop';
 
 class App extends React.Component {
   constructor (props) {

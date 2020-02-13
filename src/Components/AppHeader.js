@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import './AppHeader.scss'
 import { Jumbotron, Button } from 'react-bootstrap'
-import ScrollToNext from './ScrollToNext'
-import ScrollToPrevious from './ScrollToPrevious'
+import ScrollToNext from './Navigation/ScrollToNext'
+import ScrollToPrevious from './Navigation/ScrollToPrevious'
 
 class AppHeader extends Component {
     render() {

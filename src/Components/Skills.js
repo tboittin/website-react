@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import './Skills.scss'
-import ScrollToNext from './ScrollToNext'
-import ScrollToPrevious from './ScrollToPrevious'
+import ScrollToNext from './Navigation/ScrollToNext'
+import ScrollToPrevious from './Navigation/ScrollToPrevious'
 
 class Skills extends Component {
     
