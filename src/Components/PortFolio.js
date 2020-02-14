@@ -4,7 +4,13 @@ import ScrollToNext from './Navigation/ScrollToNext'
 import ScrollToPrevious from './Navigation/ScrollToPrevious'
 import { Card, Button, Col } from 'react-bootstrap'
 
-import colmarThumb from './colmaracademy-responsivewebpic-thumb.png'
+import colmarThumb from '../img/colmaracademy-responsivewebpic-thumb.png'
+import excursionThumb from '../img/excursion-thumb.png'
+import fitactiveThumb from '../img/FitActive-thumb.png'
+import cabin from '../img/cabin.png'
+import cake from '../img/cake.png'
+import circus from '../img/circus.png'
+import Calque from '../calque'
 
 const projects = [
     {
@@ -12,7 +18,7 @@ const projects = [
         title: "Colmar Academy",
         course: "CodeCademy - Web Development Path",
         description: "A flexbox website featuring the non existent Colmar Academy.",
-        image: {colmarThumb},
+        image: colmarThumb,
         link:"",
     },
     {
@@ -20,7 +26,7 @@ const projects = [
         title: "Excursion",
         course: "CodeCademy - Web Development Path",
         description: "A promotional page for a fictional app called Excursion.",
-        image:"",
+        image: excursionThumb,
         link:"",
     },
     {
@@ -28,7 +34,7 @@ const projects = [
         title: "FitActive",
         course: "OpenClassroom - Create a modern and professional website with WordPress",
         description: "It features the FitActive Gym. Homepage & blog page. I made this WordPress page into a static page in order to integrate it to my webpage.",
-        image:"",
+        image: fitactiveThumb,
         link:"",
     },
     {
@@ -36,7 +42,7 @@ const projects = [
         title: "ravenous",
         course: "CodeCademy - React course",
         description: "ravenous description.",
-        image:"",
+        image: cabin,
         link:"",
     },
     {
@@ -44,7 +50,7 @@ const projects = [
         title: "jammming",
         course: "CodeCademy - React course",
         description: "jammming description.",
-        image:"",
+        image: cake,
         link:"",
     },
     {
@@ -52,7 +58,7 @@ const projects = [
         title: "Movie DB",
         course: "Udemy - Complete Next.js with React & Node",
         description: "Movie DB description.",
-        image:"",
+        image: circus,
         link:"",
     },
 ]
@@ -60,16 +66,17 @@ const projects = [
 class ProjectsRender extends Component {
     render () {
         return(
-            <React.Fragment>
+            <div className="p-4 text-center">
                 {projects.map(project => (
                     <Card key={project.id} className="h-25 w-25 d-inline-flex flex-wrap m-2">
-                        <Card.Img variant="top" src={project.image}/>
-                        <a href={project.link}><Card.Title> {project.title} </Card.Title></a>
+                        <Calque>{project.title}</Calque>
+                        <Card.Img variant="top" src={project.image} className="project"/>
+                        {/* <a href={project.link}><Card.Title> {project.title} </Card.Title></a>
                         <Card.Text> {project.description} </Card.Text>
-                        <Button variant="primary">Have a look !</Button>
+                        <Button variant="primary">Have a look !</Button> */}
                     </Card>
                 ))}
-            </React.Fragment>
+            </div>
         )
     }
 }
