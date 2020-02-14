@@ -16,11 +16,13 @@ import ProfessionalList from './professionalList'
 
 import { getCourses } from '../../../Data/courses'
 import { getSkills } from '../../../Data/skills'
+import { getInfos } from '../../../Data/infos'
 
 
 const CV = () => {
     const [courses, setCourses] = useState([])
     const [skills, setSkills] = useState([])
+    const [infos, setInfos] = useState({})
     const [count, setCount] = useState(0)
 
     useEffect(() => {
@@ -29,6 +31,8 @@ const CV = () => {
             setCourses(resCourses)
             const resSkills = await getSkills()
             setSkills(resSkills)
+            const resInfos = await getInfos()
+            setInfos(resInfos)
           }
       
           fetchData()
@@ -38,7 +42,7 @@ const CV = () => {
         <div className="px-5 py-3">
             <Row>
                 <Col>
-                    <CVHeader />
+                    <CVHeader infos={infos}/>
                     {/* <Divider /> */}
                     {/* <NextSVGIcon/> */}
                     <Profile />

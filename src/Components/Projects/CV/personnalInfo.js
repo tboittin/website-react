@@ -1,22 +1,11 @@
-import React from 'react'
+import React, { Component } from 'react'
 import './personnalInfo.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faEnvelope, faPhone, faLaptopCode} from '@fortawesome/free-solid-svg-icons'
 
-const PersonnalInfo = () => {
-    const infos = {
-        profession: 'Enthusiastic Web Developer',
-        age: 25,
-        website: 'https://tboittin.github.io/',
-        mail: 'tboittin@gmail.com',
-        mailto: 'mailto:tboittin@gmail.com',
-        phone: '+33623397978',
-        phoneCall: 'tel:+33623397978',
-        linkedIn: 'https://www.linkedin.com/in/thomasboittin/'
-    }
-
-    return (
+class PersonnalInfo extends Component {
+    renderInfos (infos) {
         <React.Fragment>
             <ul className="text-center pl-0 m-3">
                 <li className="mb-4" >
@@ -48,7 +37,14 @@ const PersonnalInfo = () => {
                 </a></li>
             </ul>
         </React.Fragment>
-    )
+    }
+    
+    render () {
+        return (
+            this.renderInfos()
+        )
+    }
+    
 }
 
 export default PersonnalInfo
