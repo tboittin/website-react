@@ -6,7 +6,7 @@ import './CVHeader.css'
 
 class CVHeader extends Component {
 
-    render (infos) {
+    render () {
         return (
             <div className="hero">
                 <Container>

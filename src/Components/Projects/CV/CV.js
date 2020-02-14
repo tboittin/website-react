@@ -2,7 +2,7 @@ import './CV.scss'
 import React, { useEffect, useState } from 'react'
 import CVHeader from './CVHeader'
 import Profile from './profile'
-import LanguagesAndTools from './languagesAndTools'
+import LanguagesAndTools from './languagesAndToolsList'
 import SkillsList from './skillsList'
 import EducationList from './educationList'
 
@@ -23,6 +23,7 @@ const CV = () => {
     const [courses, setCourses] = useState([])
     const [skills, setSkills] = useState([])
     const [infos, setInfos] = useState({})
+    const [tools, serTools] = useState([])
     const [count, setCount] = useState(0)
 
     useEffect(() => {
@@ -33,6 +34,8 @@ const CV = () => {
             setSkills(resSkills)
             const resInfos = await getInfos()
             setInfos(resInfos)
+            const resTools = await getTools()
+            setTools(resTools)
           }
       
           fetchData()
@@ -46,7 +49,7 @@ const CV = () => {
                     {/* <Divider /> */}
                     {/* <NextSVGIcon/> */}
                     <Profile />
-                    <LanguagesAndTools />
+                    <LanguagesAndToolsList tools={tools}/>
                     <SkillsList skills={skills}/>
                 </Col>
             </Row>

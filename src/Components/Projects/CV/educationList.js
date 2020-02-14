@@ -29,7 +29,7 @@ class EducationList extends Component {
         return(
             <div className="EducationList">
                 <h3>Education & Projects</h3>
-                {(courses.length>0) && (this.renderCourses())}
+                {(courses.length>0) && (this.renderCourses(courses))}
             </div>
         )
     }

@@ -1,41 +1,13 @@
-import React from 'react'
+import React, { Component } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import './languagesAndTools.css'
+import './languagesAndToolsList.css'
 import { Container } from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faReact } from '@fortawesome/free-brands-svg-icons'
 
-const LanguagesAndTools = () => {
-    const toolsList = [
-        {
-            id: '1',
-            icon: <FontAwesomeIcon icon={faReact}/>,
-            name: 'React.js',
-        },
-        {
-            id: '2',
-            icon: '',
-            name: 'Next.js',
-        },
-        {
-            id: '3',
-            name: 'React-BootStrap',
-        },
-        {
-            id: '4',
-            name: 'Git',
-        },
-        {
-            id: '5',
-            name: 'WordPress',
-        },
-        {
-            id: '6',
-            name: 'HTML & CSS',
-        },
-    ]
-
-    return (
+class LanguagesAndToolsList extends Component {
+    
+    rendertools (tools) {
         <React.Fragment>
             {/* <h3>Languages and Tools</h3> */}
             <Container className="mb-3 mt-3">
@@ -48,7 +20,13 @@ const LanguagesAndTools = () => {
                 </ul>
             </Container>
         </React.Fragment>
-    )
+    }
+
+    render () {
+        return (
+            this.rendertools(tools)
+        )
+    }
 }
 
-export default LanguagesAndTools
+export default LanguagesAndToolsList

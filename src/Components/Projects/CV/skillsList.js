@@ -9,22 +9,24 @@ import { Container } from 'react-bootstrap'
 class SkillsList extends Component {
 
     renderSkills (skills) {
-        {skills.map(skill => (
-            <li key={skill.id} className="m-1 badge-pill badge-secondary">{skill.name}</li>
-        ))}
+        <div className="skills">
+            {/* <h3>Skills</h3> */}
+            <Container>
+                <ul className="pl-0 text-center d-flex flex-wrap justify-content-around">
+                    {skills.map(skill => (
+                        <li key={skill.id} className="m-1 badge-pill badge-secondary">{skill.name}</li>
+                    ))}
+                </ul>
+            {/* <MapSkills skills={skills} /> */}
+            </Container>
+        </div>
     }
     
     render () {
         return(
-            <div className="skills">
-                {/* <h3>Skills</h3> */}
-                <Container>
-                    <ul className="pl-0 text-center d-flex flex-wrap justify-content-around">
-                        <this.renderSkills />
-                    </ul>
-                {/* <MapSkills skills={skills} /> */}
-                </Container>
-            </div>
+            <React.Fragment>
+                {(skills.length>0)&&(this.renderSkills(skills))}
+            </React.Fragment>
         )
     }
 }
