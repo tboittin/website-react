@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import './Skills.scss'
+import './SkillsSection.scss'
 import ScrollToNext from './Navigation/ScrollToNext'
 import ScrollToPrevious from './Navigation/ScrollToPrevious'
 

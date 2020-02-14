@@ -1,7 +1,7 @@
 const TOOLS_DATA = [
     {
         id: '1',
-        icon: <FontAwesomeIcon icon={faReact}/>,
+        icon: '',
         name: 'React.js',
     },
     {
