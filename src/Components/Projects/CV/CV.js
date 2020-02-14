@@ -17,13 +17,18 @@ import ProfessionalList from './professionalList'
 import { getCourses } from '../../../Data/courses'
 import { getSkills } from '../../../Data/skills'
 import { getInfos } from '../../../Data/infos'
+import { getTools } from '../../../Data/tools'
+import { getDevExp } from '../../../Data/devExperience'
+import { getIstomExp } from '../../../Data/istomExperience'
 
 
 const CV = () => {
     const [courses, setCourses] = useState([])
     const [skills, setSkills] = useState([])
     const [infos, setInfos] = useState({})
-    const [tools, serTools] = useState([])
+    const [tools, setTools] = useState([])
+    const [devExp, setDevExp] = useState([])
+    const [istomExp, setIstomExp] = useState([])
     const [count, setCount] = useState(0)
 
     useEffect(() => {
@@ -36,6 +41,10 @@ const CV = () => {
             setInfos(resInfos)
             const resTools = await getTools()
             setTools(resTools)
+            const resDevExp = await getDevExp()
+            setDevExp(resDevExp)
+            const resIstomExp = await getIstomExp()
+            setIstomExp(resIstomExp)
           }
       
           fetchData()
@@ -68,7 +77,7 @@ const CV = () => {
                     <div className="d-lg-none">
                         <hr className="my-1"/>
                     </div>
-                    <ProfessionalList />
+                    <ProfessionalList devExp={devExp} istomExp={istomExp}/>
                 </Col>
                 <Col
                     lg={{

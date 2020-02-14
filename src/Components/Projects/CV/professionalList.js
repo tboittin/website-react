@@ -1,51 +1,12 @@
-import React from 'react'
+import React, { Component } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { Container } from 'react-bootstrap'
 import './professionalList.css'
 
-const ProfessionalList = () => {
-    const devExperience = [
-        {
-            id: 1,
-            title: "Freelance Web Developer",
-            company: "",
-            country: "France",
-            period: "2019 - ongoing",
-            description: `
-                Web Freelancer - React - WordPress - Static Website - SEO
-            `,
-        },
-        {
-            id: 2,
-            title: "COBOL Analyst Developer",
-            company: "Adaming Conseil",
-            country: "France",
-            period: "2018 - 2019",
-            description: `
-                Product evolution as part of planned actions.
-                Development and unit tests.
-                Reporting.
-                Technical correction related to user Demands.
-                Go live patches.
-            `,
-        }
-    ]
-    
-    const istomExperience = [
-        {
-            id: 1,
-            title: "Agronomy Engineer",
-            company: "IIRR",
-            country: "Philippines",
-            period: "2016",
-            description: `
-                Short term impact study - family farming support project - Cavite province.
-                Monitoring tool development - better reporting & improved project management.            
-            `,
-        },
-    ]
+class ProfessionalList extends Component {
 
-    const devRender = () => {
+
+    renderDev = (devExperience) => {
         return (
             <div>
                 {devExperience.map(devExperience => (
@@ -63,7 +24,7 @@ const ProfessionalList = () => {
         )
     }
 
-    const istomRender = () => {
+    renderIstom = (istomExperience) => {
         return (
             <div>
                 {istomExperience.map(istomExperience => (
@@ -79,7 +40,7 @@ const ProfessionalList = () => {
         )
     }
 
-    const reorientation = () => {
+    reorientation = () => {
         return(
             <div className="reorientation">
                 <hr />
@@ -90,15 +51,16 @@ const ProfessionalList = () => {
             </div>
         )
     }
-
-    return(
-        <div className="ProfessionalList">
-            <h3>Professional Experiences</h3>
-            {(devExperience.length > 0) && devRender()}
-            {((istomExperience.length > 0) && (devExperience.length > 0)) && reorientation()}
-            {(istomExperience.length > 0) && istomRender()}
-        </div>
-    )
+    render () {
+        return(
+            <div className="ProfessionalList">
+                <h3>Professional Experiences</h3>
+                {(devExp.length > 0) && this.renderDev(devExp)}
+                {((istomExp.length > 0) && (devExp.length > 0)) && reorientation()}
+                {(istomExp.length > 0) && this.renderIstom(istomExp)}
+            </div>
+        )
+    }
 }
 
 export default ProfessionalList
