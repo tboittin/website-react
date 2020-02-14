@@ -3,7 +3,7 @@ import './Skills.scss'
 import ScrollToNext from './Navigation/ScrollToNext'
 import ScrollToPrevious from './Navigation/ScrollToPrevious'
 
-class Skills extends Component {
+class SkillsSection extends Component {
     
     render() {
         const {sectionOrder, positionOrder} = this.props;
@@ -25,4 +25,4 @@ class Skills extends Component {
     }
 }
 
-export default Skills
+export default SkillsSection

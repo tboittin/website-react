@@ -4,7 +4,7 @@ import './App.scss';
 import AppNavbar from './Components/AppNavbar';
 import AppHeader from './Components/AppHeader';
 import Portfolio from './Components/PortFolio';
-import Skills from './Components/Skills';
+import SkillsSection from './Components/SkillsSection';
 import Experiences from './Components/Experiences';
 import Contact from './Components/Contact';
 import ScrollToTop from './Components/Navigation/ScrollToTop';
@@ -25,6 +25,8 @@ class App extends React.Component {
       ]
     }
   }
+
+  
   render() {
     const {
       portfolio,
@@ -44,7 +46,7 @@ class App extends React.Component {
           sectionOrder={sectionOrder}
           positionOrder={1}
         />
-        <Skills
+        <SkillsSection
           skills={skills}
           sectionOrder={sectionOrder}
           positionOrder={2}
