@@ -25,7 +25,7 @@ const App = () => {
   const [devExp, setDevExp] = useState([])
   const [istomExp, setIstomExp] = useState([])
   const [projects, setProjects] = useState([])
-  const [count, setCount] = useState(0)
+  // const [count, setCount] = useState(0)
   const [sectionOrder, setSectionOrder] = useState([])
 
   useEffect(() => {
@@ -54,7 +54,9 @@ const App = () => {
       {name: "contact"},
     ])
   
-  }, [count])
+  },
+  // [count]
+  [])
 
   return (
     <div className="App">
@@ -70,15 +72,17 @@ const App = () => {
       />
       <SkillsSection
         skills={skills}
+        tools={tools}
         sectionOrder={sectionOrder}
         positionOrder={2}
       />
       <Experiences
-        devExp={devExp} istomExp={istomExp}
+        devExp={devExp} istomExp={istomExp} courses={courses}
         sectionOrder={sectionOrder}
         positionOrder={3}
       />
       <Contact
+        infos={infos}
         sectionOrder={sectionOrder}
         positionOrder={4}
       />
