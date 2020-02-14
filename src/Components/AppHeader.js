@@ -19,7 +19,7 @@ class AppHeader extends Component {
                             <h1>Hi I'm Thomas</h1>
                             <p>I'm a Web Developper</p>
                             <Button>
-                                About Me
+                                My Resume
                             </Button>
                         </div>
                         <ScrollToNext
