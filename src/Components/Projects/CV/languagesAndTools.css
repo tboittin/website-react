@@ -1,0 +1,8 @@
+ul {
+    list-style: none;
+}
+@media (min-width: 1200px){
+    ul {
+        justify-content: space-between;
+    }
+}
