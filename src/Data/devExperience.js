@@ -29,7 +29,7 @@ export const getDevExp = () => {
     return new Promise((resolve, reject) => {
       setTimeout(()=>{
         resolve (DEVEXP_DATA)
-      }, 2000)
+      }, 100)
     })
 }
 

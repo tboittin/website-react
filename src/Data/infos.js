@@ -13,6 +13,6 @@ export const getInfos = () => {
     return new Promise((resolve, reject) => {
       setTimeout(()=>{
         resolve (INFOS_DATA)
-      }, 2000)
+      }, 100)
     })
 }

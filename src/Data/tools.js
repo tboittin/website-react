@@ -31,6 +31,6 @@ export const getTools = () => {
     return new Promise((resolve, reject) => {
       setTimeout(()=>{
         resolve (TOOLS_DATA)
-      }, 2000)
+      }, 100)
     })
 }

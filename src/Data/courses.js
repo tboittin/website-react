@@ -63,6 +63,6 @@ export const getCourses = () => {
     return new Promise((resolve, reject) => {
       setTimeout(()=>{
         resolve (COURSES_DATA)
-      }, 2000)
+      }, 100)
     })
 }

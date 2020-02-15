@@ -17,6 +17,6 @@ export const getSkills = () => {
     return new Promise((resolve, reject) => {
       setTimeout(()=>{
         resolve (SKILLS_DATA)
-      }, 2000)
+      }, 100)
     })
 }

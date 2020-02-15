@@ -16,6 +16,6 @@ export const getIstomExp = () => {
     return new Promise((resolve, reject) => {
       setTimeout(()=>{
         resolve (ISTOMEXP_DATA)
-      }, 2000)
+      }, 100)
     })
 }

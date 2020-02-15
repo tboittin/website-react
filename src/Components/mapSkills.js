@@ -9,8 +9,8 @@ class MapSkills extends Component {
         ))
     }
     
-    render (skills) {
-        {console.log(skills)}
+    render () {
+        const {skills} = this.props
         return (
             <ul className="pl-0 text-center d-flex flex-wrap justify-content-around">
                 {this.skillsMapping(skills)}

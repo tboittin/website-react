@@ -55,7 +55,6 @@ const App = () => {
     ])
   
   },
-  // [count]
   [])
 
   return (
@@ -90,58 +89,5 @@ const App = () => {
     </div>
   )
 }
-
-// class App extends React.Component {
-//   constructor (props) {
-//     super(props);
-//     this.state = {
-//       sectionOrder: [
-//         {name: "header"},
-//         {name: "portfolio"},
-//         {name: "skills"},
-//         {name: "experiences"},
-//         {name: "contact"},
-//       ]
-//     }
-//   }
-
-//   render() {
-//     const {
-//       portfolio,
-//       skills,
-//       experiences,
-//       sectionOrder,
-//     } = this.state;
-//     return (
-//       <div className="App">
-//         <AppNavbar />
-//         <AppHeader 
-//           sectionOrder={sectionOrder}
-//           positionOrder={0}
-//         />
-//         <Portfolio
-//           portfolio={portfolio}
-//           sectionOrder={sectionOrder}
-//           positionOrder={1}
-//         />
-//         <SkillsSection
-//           skills={skills}
-//           sectionOrder={sectionOrder}
-//           positionOrder={2}
-//         />
-//         <Experiences
-//           experiences={experiences}
-//           sectionOrder={sectionOrder}
-//           positionOrder={3}
-//         />
-//         <Contact
-//           sectionOrder={sectionOrder}
-//           positionOrder={4}
-//         />
-//         <ScrollToTop />
-//       </div>
-//     );
-//   }
-// }
 
 export default App;

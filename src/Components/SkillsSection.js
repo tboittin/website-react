@@ -2,11 +2,12 @@ import React, { Component } from 'react'
 import './SkillsSection.scss'
 import ScrollToNext from './Navigation/ScrollToNext'
 import ScrollToPrevious from './Navigation/ScrollToPrevious'
+import MapSkills from './mapSkills'
 
 class SkillsSection extends Component {
-    
+
     render() {
-        const {sectionOrder, positionOrder} = this.props;
+        const {sectionOrder, positionOrder, skills, tools} = this.props;
         return(
             <section id="skills">
                 <ScrollToPrevious
@@ -14,7 +15,8 @@ class SkillsSection extends Component {
                     positionOrder={positionOrder}
                 />
                 <div className="skillsContent">
-                    <p>My skills</p>
+                    <MapSkills skills={tools} />
+                    <MapSkills skills={skills} />
                 </div>
                 <ScrollToNext
                     sectionOrder={sectionOrder}
