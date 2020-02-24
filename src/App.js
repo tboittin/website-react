@@ -16,6 +16,7 @@ import { getTools } from './Data/tools'
 import { getDevExp } from './Data/devExperience'
 import { getIstomExp } from './Data/istomExperience'
 import { getProjects } from './Data/projects'
+import PortfolioPortage from './Components/Portfolio-portage';
 
 const App = () => {
   const [courses, setCourses] = useState([])
@@ -64,7 +65,7 @@ const App = () => {
         sectionOrder={sectionOrder}
         positionOrder={0}
       />
-      <Portfolio
+      <PortfolioPortage
         projects={projects}
         sectionOrder={sectionOrder}
         positionOrder={1}
