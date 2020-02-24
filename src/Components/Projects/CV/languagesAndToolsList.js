@@ -24,7 +24,7 @@ class LanguagesAndToolsList extends Component {
 
     render () {
         return (
-            this.rendertools(tools)
+            (infos.length>0)&&(this.rendertools(tools))
         )
     }
 }
