@@ -66,7 +66,7 @@ const App = () => {
         positionOrder={0}
       />
       <PortfolioPortage
-        projects={projects}
+        // projects={projects}
         sectionOrder={sectionOrder}
         positionOrder={1}
       />

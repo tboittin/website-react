@@ -3,7 +3,6 @@ import './Portfolio.scss'
 import ScrollToNext from './Navigation/ScrollToNext'
 import ScrollToPrevious from './Navigation/ScrollToPrevious'
 import { Card,  Col, Button } from 'react-bootstrap'
-import XlModal from './Utilities/Modals/xlModal'
 // import Calque from '../calque'
 
 
@@ -30,19 +29,17 @@ class Portfolio extends Component {
                                 Modal
                             </Button>
                         </Card>
-                        {this.renderModalProject(project, show)}
+                        {/* {this.renderModalProject(project, show)} */}
                     </div>
                 ))}
             </>
         )
     }
 
-    renderModalProject (project, show) {
-        return(
-            <XlModal project={project} show={show}/>
-        )
-        
-    }
+    // renderModalProject (project, show) {
+    //     return(
+    //     )
+    // }
 
     render() {
         const {sectionOrder, positionOrder, projects} = this.props;
