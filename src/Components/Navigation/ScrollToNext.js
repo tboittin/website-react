@@ -24,7 +24,6 @@ class ScrollToNext extends Component {
     handleScrollToNext() {
         const {sectionOrder, positionOrder} = this.props;
         const next = document.getElementById(sectionOrder[positionOrder+1].name);
-        console.log(next);
         this.scrollToNext(next);
     }
     
