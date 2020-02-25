@@ -16,9 +16,10 @@ class ScrollToNext extends Component {
 
     toggleVisibility() {
         const {positionOrder, sectionOrder} = this.props;
-        (positionOrder === sectionOrder.length -1) ? 
+        console.log(sectionOrder);
+        (positionOrder === 4) ? 
             this.setState({ visible: false }) :
-            this.setState({ visible: true })
+            this.setState({ visible: true });   
     }
 
     handleScrollToNext() {
