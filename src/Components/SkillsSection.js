@@ -32,7 +32,10 @@ class SkillsSection extends Component {
                     sectionOrder={sectionOrder}
                     positionOrder={positionOrder}
                 />
-                <div className="skillsContent d-flex flex-wrap p-5">
+                <div className="text-center m-4">
+                    <h2>Skills</h2>
+                </div>
+                <div className="skillsContent d-flex flex-wrap pb-0">
                     <ProgressBarSkills skills={tools} variant={"info"}/>
                     <ProgressBarSkills skills={skills} variant={"danger"}/>
                 </div>

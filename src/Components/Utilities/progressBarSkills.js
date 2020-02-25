@@ -6,7 +6,7 @@ import { Container, ProgressBar } from 'react-bootstrap'
 class ProgressBarSkills extends Component {
     renderProgressBar (skills, variant) {
         return skills.map(skill => (
-            <Container key={skill.id} className="pb-2 w-50">
+            <Container key={skill.id} className="h-25 w-50">
                 <h4>{skill.name}</h4>
                 <ProgressBar striped variant={variant} now="100"/>
             </Container>
@@ -16,9 +16,9 @@ class ProgressBarSkills extends Component {
     render () {
         const {skills, variant} = this.props
         return (
-            <React.Fragment>
+            <>
                 {this.renderProgressBar(skills, variant)}
-            </React.Fragment>
+            </>
         )
     }
 }
