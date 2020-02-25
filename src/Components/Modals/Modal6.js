@@ -8,7 +8,7 @@ function Modal6() {
   
     return (
       <>
-        <div className="p-4 h-25 w-25 d-inline-flex flex-wrap m-2">
+        <div className="p-4 h-25 w-25 d-inline-flex flex-wrap mx-2">
             <Card
                 onClick={() => setModal6Show(true)}
             >
@@ -23,7 +23,7 @@ function Modal6() {
         </div>
         
         <Modal
-          size="md"
+          size="lg"
           show={Modal6Show}
           onHide={() => setModal6Show(false)}
           aria-labelledby="example-modal-sizes-title-sm"
@@ -34,7 +34,7 @@ function Modal6() {
                 </Modal.Title>
             </Modal.Header>
             <Modal.Body className="text-center">
-                <Image src={colmar} fluid />
+                <Image src={colmar} className="w-75"/>
                 <p>A website I made during my course on CodeCademy. It features the homepage of the non existent Colmar Academy. Made using flexbox only.</p>
                 <Button>Have a look!</Button>
             </Modal.Body>

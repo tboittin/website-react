@@ -8,7 +8,7 @@ function Modal5() {
   
     return (
       <>
-        <div className="p-4 h-25 w-25 d-inline-flex flex-wrap m-2">
+        <div className="p-4 h-25 w-25 d-inline-flex flex-wrap mx-2">
             <Card
                 onClick={() => setModal5Show(true)}
             >
@@ -23,7 +23,7 @@ function Modal5() {
         </div>
         
         <Modal
-          size="md"
+          size="lg"
           show={Modal5Show}
           onHide={() => setModal5Show(false)}
           className="text-center"

@@ -2,27 +2,27 @@ import React, {useState} from 'react'
 import {Button, Modal, Card, Image} from 'react-bootstrap'
 import circus from '../../img/circus.png'
 
+
 function Modal1() {
     const [Modal1Show, setModal1Show] = useState(false);
   
     return (
       <>
-        <div className="p-4 h-25 w-25 d-inline-flex flex-wrap m-2">
+        <div className="p-4 h-25 w-25 d-inline-flex flex-wrap mx-2">
             <Card
                 onClick={() => setModal1Show(true)}
+                className="project"
             >
-                <Card.Img
-                    variant="top"
-                    className="project"
-                    src={circus}
-                    alt="" 
-                    
-                />
+                    <Card.Img
+                        variant="top"
+                        src={circus}
+                        alt=""
+                    />
             </Card>
         </div>
         
         <Modal
-          size="md"
+          size="lg"
           show={Modal1Show}
           onHide={() => setModal1Show(false)}
           aria-labelledby="example-modal-sizes-title-sm"

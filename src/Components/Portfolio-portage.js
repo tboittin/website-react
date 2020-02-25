@@ -11,6 +11,7 @@ import Modal3 from './Modals/Modal3'
 import Modal4 from './Modals/Modal4'
 import Modal5 from './Modals/Modal5'
 import Modal6 from './Modals/Modal6'
+import './Modals/Modal.scss'
 
 class PortfolioPortage extends Component {
 
@@ -31,7 +32,6 @@ class PortfolioPortage extends Component {
                             offset:1,
                         }}
                         className="text-center"
-                        id="modals"
                     >
                         {/* <Modal1 /> */}
                         <Modal2 />

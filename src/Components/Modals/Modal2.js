@@ -7,7 +7,7 @@ function Modal2() {
   
     return (
       <>
-        <div className="p-4 h-25 w-25 d-inline-flex flex-wrap m-2">
+        <div className="p-4 h-25 w-25 d-inline-flex flex-wrap mx-2">
             <Card
                 onClick={() => setModal2Show(true)}
             >
@@ -22,7 +22,7 @@ function Modal2() {
         </div>
         
         <Modal
-          size="md"
+          size="lg"
           show={Modal2Show}
           onHide={() => setModal2Show(false)}
           aria-labelledby="example-modal-sizes-title-sm"
