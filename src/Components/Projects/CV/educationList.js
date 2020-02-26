@@ -26,6 +26,7 @@ class EducationList extends Component {
     }
 
     render () {
+        const courses = this.props
         return(
             <div className="EducationList">
                 <h3>Education & Projects</h3>

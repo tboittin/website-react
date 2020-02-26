@@ -2,11 +2,12 @@ import React, { Component } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { Container, Row, Col } from 'react-bootstrap'
 import PersonnalInfo from './personnalInfo'
-import './CVHeader.css'
+import './CVHeader.scss'
 
 class CVHeader extends Component {
 
     render () {
+        const infos = this.props
         return (
             <div className="hero">
                 <Container>

@@ -1,8 +1,8 @@
-import './CV.scss'
+import './custom.scss'
 import React, { useEffect, useState } from 'react'
 import CVHeader from './CVHeader'
 import Profile from './profile'
-import LanguagesAndTools from './languagesAndToolsList'
+import LanguagesAndToolsList from './languagesAndToolsList'
 import SkillsList from './skillsList'
 import EducationList from './educationList'
 
@@ -11,8 +11,6 @@ import './custom.scss'
 
 import { Col, Row} from 'react-bootstrap'
 import ProfessionalList from './professionalList'
-// import NextSVGIcon from './nextSvgIcon'
-// import Divider from './divider'
 
 import { getCourses } from '../../../Data/courses'
 import { getSkills } from '../../../Data/skills'
@@ -21,7 +19,6 @@ import { getTools } from '../../../Data/tools'
 import { getDevExp } from '../../../Data/devExperience'
 import { getIstomExp } from '../../../Data/istomExperience'
 
-
 const CV = () => {
     const [courses, setCourses] = useState([])
     const [skills, setSkills] = useState([])
@@ -29,7 +26,6 @@ const CV = () => {
     const [tools, setTools] = useState([])
     const [devExp, setDevExp] = useState([])
     const [istomExp, setIstomExp] = useState([])
-    const [count, setCount] = useState(0)
 
     useEffect(() => {
         const fetchData = async () => {
@@ -48,15 +44,13 @@ const CV = () => {
           }
       
           fetchData()
-    }, [count])
+    }, [])
 
     return(
-        <div className="px-5 py-3">
+        <div className="px-5 py-3 CVBody">
             <Row>
                 <Col>
                     <CVHeader infos={infos}/>
-                    {/* <Divider /> */}
-                    {/* <NextSVGIcon/> */}
                     <Profile />
                     <LanguagesAndToolsList tools={tools}/>
                     <SkillsList skills={skills}/>

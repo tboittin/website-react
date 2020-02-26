@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
 import './AppHeader.scss'
-import { Jumbotron, Button } from 'react-bootstrap'
+import { Jumbotron} from 'react-bootstrap'
 import ScrollToNext from './Navigation/ScrollToNext'
 import ScrollToPrevious from './Navigation/ScrollToPrevious'
+import ModalCV from './Modals/ModalCV'
 
 class AppHeader extends Component {
     render() {
@@ -18,9 +19,7 @@ class AppHeader extends Component {
                         <div id="JumbotronText">
                             <h1>Hi I'm Thomas</h1>
                             <p>I'm a Web Developper</p>
-                            <Button>
-                                My Resume
-                            </Button>
+                            <ModalCV />
                         </div>
                         <ScrollToNext
                             sectionOrder={sectionOrder}

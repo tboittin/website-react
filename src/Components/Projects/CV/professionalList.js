@@ -8,7 +8,7 @@ class ProfessionalList extends Component {
 
     renderDev = (devExperience) => {
         return (
-            <div>
+            <>
                 {devExperience.map(devExperience => (
                     <Container key={devExperience.id} className="experience pr-0">
                         <h4>
@@ -20,13 +20,13 @@ class ProfessionalList extends Component {
                         </Container>
                     </Container>
                 ))}
-            </div>
+            </>
         )
     }
 
     renderIstom = (istomExperience) => {
         return (
-            <div>
+            <>
                 {istomExperience.map(istomExperience => (
                     <Container key={istomExperience.id} className="experience pr-0">
                         <h4>{istomExperience.title} {(istomExperience.company.length>0)&&(' - ' + istomExperience.company)}</h4>
@@ -36,7 +36,7 @@ class ProfessionalList extends Component {
                         </Container>
                     </Container>
                 ))}
-            </div>
+            </>
         )
     }
 
@@ -52,11 +52,12 @@ class ProfessionalList extends Component {
         )
     }
     render () {
+        const {devExp, istomExp} = this.props
         return(
             <div className="ProfessionalList">
                 <h3>Professional Experiences</h3>
                 {(devExp.length > 0) && this.renderDev(devExp)}
-                {((istomExp.length > 0) && (devExp.length > 0)) && reorientation()}
+                {((istomExp.length > 0) && (devExp.length > 0)) && this.reorientation()}
                 {(istomExp.length > 0) && this.renderIstom(istomExp)}
             </div>
         )
