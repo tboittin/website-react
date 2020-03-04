@@ -21,8 +21,9 @@ class ModalCV extends Component {
     return (
       <>
         <Button onClick={() => this.setModalCVShow(true)}>
-            My Resume
+          My Resume
         </Button>
+        
         
         <Modal
           size="xl"
@@ -47,7 +48,9 @@ class ModalCV extends Component {
                 skills={skills}
                 tools={tools}
               />
-              <Button>Download it !</Button>
+              <a href="..\Projects\CV\Resume - Thomas Boittin-26-02-2020.pdf" download>
+                <Button>Download it !</Button>
+              </a>
             </Modal.Body>
         </Modal>
       </>
