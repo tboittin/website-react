@@ -5,18 +5,17 @@ import './professionalList.css'
 
 class ProfessionalList extends Component {
 
-
     renderDev = (devExperience) => {
         return (
             <>
                 {devExperience.map(devExperience => (
-                    <Container key={devExperience.id} className="experience pr-0">
+                    <Container key={devExperience.id} className="experience pr-0 text-left">
                         <h4>
                             {devExperience.title}
                             {(devExperience.company.length>0)&&(' - ' + devExperience.company)}</h4>
                         <Container className="pr-0">
                             <p className="mb-1">{devExperience.country} - {devExperience.period}</p>
-                            <p>{devExperience.description} </p>
+                            <p className="text-justify">{devExperience.description} </p>
                         </Container>
                     </Container>
                 ))}
@@ -28,11 +27,11 @@ class ProfessionalList extends Component {
         return (
             <>
                 {istomExperience.map(istomExperience => (
-                    <Container key={istomExperience.id} className="experience pr-0">
+                    <Container key={istomExperience.id} className="experience pr-0 text-left">
                         <h4>{istomExperience.title} {(istomExperience.company.length>0)&&(' - ' + istomExperience.company)}</h4>
                         <Container className="pr-0">
                             <p className="mb-1">{istomExperience.country} - {istomExperience.period}</p>
-                            <p>{istomExperience.description} </p>
+                            <p className="text-justify">{istomExperience.description} </p>
                         </Container>
                     </Container>
                 ))}

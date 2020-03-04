@@ -35,9 +35,12 @@ class PersonnalInfo extends Component {
     render () {
         const infos = this.props
         return (
-            <React.Fragment>
-                {(infos.length>0)&&(this.renderInfos(infos))}
-            </React.Fragment>
+            <>
+                {
+                    // (infos.length>0)&&
+                    (this.renderInfos(infos))
+                }
+            </>
         )
     }
     
