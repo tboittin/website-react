@@ -15,7 +15,7 @@ function AppNavbar() {
             <Col lg={1} className="justify-content-start">
                 <Navbar.Brand href="#home"><img src={logo} className="App-logo" alt="logo" /> Logo</Navbar.Brand>
             </Col>
-            <Col lg={{span: 3, offset:5}}>
+            <Col lg={{span: 3, offset:7}}>
                 <Nav className="mr-auto smooth-scroll">
                     <Nav.Link onClick={() => SmoothScrollTo('AppHeader')}>
                         About
@@ -34,16 +34,16 @@ function AppNavbar() {
                     </Nav.Link>
                 </Nav>
             </Col>
-            <Col lg={2} className="justify-content-end">
+            {/* <Col lg={2} className="justify-content-end">
                 <Button variant="light">
                     <span className="d-none d-xl-inline">Go to </span>LightMode
                 </Button>
-            </Col>
-            <Col lg={1} className="justify-content-end">
+            </Col> */}
+            {/* <Col lg={1} className="justify-content-end">
                 <Button variant="dark">
                     EN
                 </Button>
-            </Col>
+            </Col> */}
         </Navbar>
     )
 }
