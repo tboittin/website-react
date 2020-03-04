@@ -25,7 +25,7 @@ class LanguagesAndToolsList extends Component {
             <div className="mb-3 mt-3">
                 <ul className="p-1 text-center d-flex flex-wrap justify-content-around">
                     {
-                        // (tools.length>0)&&
+                        (tools.length>0)&&
                         (this.rendertools(tools))
                     }
                 </ul>

@@ -11,6 +11,9 @@ import './custom.scss'
 
 import { Col, Row} from 'react-bootstrap'
 import ProfessionalList from './professionalList'
+import EducationListHard from './educationListHard'
+import LanguagesAndToolsListHard from './languagesAndToolsHard'
+import SkillsListHard from './skillsListHard'
 
 class CV extends Component {
 
@@ -22,8 +25,10 @@ class CV extends Component {
                     <Col>
                         <CVHeader infos={infos}/>
                         <Profile />
-                        <LanguagesAndToolsList tools={tools}/>
-                        <SkillsList skills={skills}/>
+                        {/* <LanguagesAndToolsList tools={tools}/> */}
+                        <LanguagesAndToolsListHard />
+                        {/* <SkillsList skills={skills}/> */}
+                        <SkillsListHard />
                     </Col>
                 </Row>
                 <hr className="double-razor"/>
@@ -52,8 +57,8 @@ class CV extends Component {
                         }}
                         className="order-1 order-lg-2"
                     >
-                        <EducationList courses={courses}/>
-                        
+                        {/* <EducationList courses={courses}/> */}
+                        <EducationListHard />
                     </Col>
                 </Row>
             </div>

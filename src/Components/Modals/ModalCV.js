@@ -1,7 +1,7 @@
 import React, {useState, Component} from 'react'
 import {Button, Modal} from 'react-bootstrap'
 // import PDFViewer from 'pdf-viewer-reactjs'
-// import CV from '../Projects/CV/CV'
+import CV from '../Projects/CV/CV'
 
 class ModalCV extends Component {
   constructor(props){
@@ -39,14 +39,14 @@ class ModalCV extends Component {
               {/* <PDFViewer 
                 document={{url:"../Projects/CV/Resume - Thomas Boittin-26-02-2020.pdf",}}
               /> */}
-              {/* <CV 
+              <CV 
                 devExp={devExp}
                 istomExp={istomExp}
                 courses={courses}
                 infos={infos}
                 skills={skills}
                 tools={tools}
-              /> */}
+              />
               <Button>Download it !</Button>
             </Modal.Body>
         </Modal>

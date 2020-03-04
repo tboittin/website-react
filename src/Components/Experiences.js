@@ -18,8 +18,8 @@ class Experiences extends Component {
                 <div className="experiencesContent">
                     <p>My Experiences</p>
                     <div>
-                        <ExperienceVerticalTimeline
-                         />
+                        {/* <ExperienceVerticalTimeline
+                         /> */}
                     </div>
                 </div>
                 <ScrollToNext

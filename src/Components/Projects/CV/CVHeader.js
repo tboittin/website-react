@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import PersonnalInfo from './personnalInfo'
 import './CVHeader.scss'
+import PersonnalInfoHard from './personnalInfoHard'
 
 class CVHeader extends Component {
 
@@ -13,7 +14,8 @@ class CVHeader extends Component {
                         <h1>Thomas Boittin</h1>
                     </div>
                     <div className="text-center text-lg-right">
-                        <PersonnalInfo infos={infos}/>
+                        {/* <PersonnalInfo infos={infos}/> */}
+                        <PersonnalInfoHard />
                     </div>
                 </>
             </div>
