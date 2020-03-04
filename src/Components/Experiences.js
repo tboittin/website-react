@@ -3,6 +3,8 @@ import './Experiences.scss'
 import PropTypes from 'prop-types'
 import ScrollToNext from './Navigation/ScrollToNext'
 import ScrollToPrevious from './Navigation/ScrollToPrevious'
+import VerticalTimeline from './Utilities/VerticalTimeline'
+import ExperienceVerticalTimeline from './Utilities/VerticalTimeline'
 
 class Experiences extends Component {
     render() {
@@ -15,6 +17,10 @@ class Experiences extends Component {
                 />
                 <div className="experiencesContent">
                     <p>My Experiences</p>
+                    <div>
+                        <ExperienceVerticalTimeline
+                         />
+                    </div>
                 </div>
                 <ScrollToNext
                     sectionOrder={sectionOrder}
