@@ -1,4 +1,4 @@
-const TOOLS_DATA = [
+export const TOOLS_DATA = [
     {
         id: '1',
         icon: '',
@@ -31,6 +31,6 @@ export const getTools = () => {
     return new Promise((resolve, reject) => {
       setTimeout(()=>{
         resolve (TOOLS_DATA)
-      }, 100)
+      }, 20)
     })
 }

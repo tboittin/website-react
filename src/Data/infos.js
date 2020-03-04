@@ -1,4 +1,4 @@
-const INFOS_DATA = {
+export const INFOS_DATA = {
     profession: 'Enthusiastic Web Developer',
     age: 25,
     website: 'https://tboittin.github.io/',
@@ -13,6 +13,6 @@ export const getInfos = () => {
     return new Promise((resolve, reject) => {
       setTimeout(()=>{
         resolve (INFOS_DATA)
-      }, 100)
+      }, 20)
     })
 }

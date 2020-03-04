@@ -5,7 +5,7 @@ import cabin from '../img/cabin.png'
 import cake from '../img/cake.png'
 import circus from '../img/circus.png'
 
-const PROJECTS_DATA = [
+export const PROJECTS_DATA = [
   {
     id: 1,
     title: "Colmar Academy",
@@ -72,6 +72,6 @@ export const getProjects = () => {
   return new Promise((resolve, reject) => {
     setTimeout(()=>{
       resolve (PROJECTS_DATA)
-    }, 100)
+    }, 20)
   })
 }

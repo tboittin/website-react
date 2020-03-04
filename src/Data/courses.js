@@ -1,4 +1,4 @@
-const COURSES_DATA = [
+export const COURSES_DATA = [
     {
         id: 1,
         title: "Udemy - Complete Next.js with React & Node",
@@ -63,6 +63,6 @@ export const getCourses = () => {
     return new Promise((resolve, reject) => {
       setTimeout(()=>{
         resolve (COURSES_DATA)
-      }, 100)
+      }, 20)
     })
 }

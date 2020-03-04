@@ -1,4 +1,4 @@
-const DEVEXP_DATA = [
+export const DEVEXP_DATA = [
     {
         id: 1,
         title: "Freelance Web Developer",
@@ -29,7 +29,7 @@ export const getDevExp = () => {
     return new Promise((resolve, reject) => {
       setTimeout(()=>{
         resolve (DEVEXP_DATA)
-      }, 100)
+      }, 20)
     })
 }
 

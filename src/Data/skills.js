@@ -1,4 +1,4 @@
-const SKILLS_DATA = [
+export const SKILLS_DATA = [
     {
         id: '1',
         name: 'Autodidact'
@@ -17,6 +17,6 @@ export const getSkills = () => {
     return new Promise((resolve, reject) => {
       setTimeout(()=>{
         resolve (SKILLS_DATA)
-      }, 100)
+      }, 20)
     })
 }

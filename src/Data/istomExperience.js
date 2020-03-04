@@ -1,4 +1,4 @@
-const ISTOMEXP_DATA = [
+export const ISTOMEXP_DATA = [
     {
         id: 1,
         title: "Agronomy Engineer",
