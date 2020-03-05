@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import {Button, Row} from 'react-bootstrap'
 import './ScrollToPrevious.scss'
+import {IoIosArrowDropupCircle} from 'react-icons/io'
 
 class ScrollToPrevious extends Component {
     constructor(props) {
@@ -52,11 +53,14 @@ class ScrollToPrevious extends Component {
             <div className="scrollToPrevious">
                 {visible && (
                     <Row className="d-flex justify-content-center align-self-start">
-                        <Button
-                            onClick={() => this.handleScrollToPrevious()}
-                        >
-                            Previous
-                        </ Button>
+                        <div style={{color:'#007bff'}}>
+                            <IoIosArrowDropupCircle
+                                onClick={() => this.handleScrollToPrevious()}
+                                size={40}
+                            >
+                                Previous
+                            </ IoIosArrowDropupCircle>
+                        </div>
                     </Row>
                 )}
             </div>
