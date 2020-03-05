@@ -1,10 +1,10 @@
 import './custom.scss'
-import React, { useEffect, useState, Component } from 'react'
+import React, {Component } from 'react'
 import CVHeader from './CVHeader'
 import Profile from './profile'
-import LanguagesAndToolsList from './languagesAndToolsList'
-import SkillsList from './skillsList'
-import EducationList from './educationList'
+// import LanguagesAndToolsList from './languagesAndToolsList'
+// import SkillsList from './skillsList'
+// import EducationList from './educationList'
 
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './custom.scss'
@@ -18,7 +18,9 @@ import SkillsListHard from './skillsListHard'
 class CV extends Component {
 
     render(){
-        const {devExp, istomExp, courses, infos, skills, tools} = this.props;
+        const {devExp, istomExp, infos,
+            // skills, tools, courses 
+        } = this.props;
         return(
             <div className="px-5 py-3 CVBody">
                 <Row>
