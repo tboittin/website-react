@@ -6,7 +6,7 @@ import {FaLaptopCode, FaEnvelope, FaPhone} from 'react-icons/fa'
 class PersonnalInfoHard extends Component {
     
     render () {
-        const infos = this.props
+        // const infos = this.props
         return (
             <>
                 <ul className="text-center pl-0 m-3">

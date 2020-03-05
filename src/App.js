@@ -1,9 +1,9 @@
-import React, {useState, useEffect, Component} from 'react';
+import React, {Component} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.scss';
 import AppNavbar from './Components/AppNavbar';
 import AppHeader from './Components/AppHeader';
-import Portfolio from './Components/PortFolio';
+// import Portfolio from './Components/PortFolio';
 import SkillsSection from './Components/SkillsSection';
 import Experiences from './Components/Experiences';
 import Contact from './Components/Contact';

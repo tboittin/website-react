@@ -1,4 +1,4 @@
-import React, {useState, Component} from 'react'
+import React, {Component} from 'react'
 import {Button, Modal} from 'react-bootstrap'
 // import PDFViewer from 'pdf-viewer-reactjs'
 import CV from '../Projects/CV/CV'

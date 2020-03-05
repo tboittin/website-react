@@ -3,13 +3,14 @@ import './Experiences.scss'
 import PropTypes from 'prop-types'
 import ScrollToNext from './Navigation/ScrollToNext'
 import ScrollToPrevious from './Navigation/ScrollToPrevious'
-import VerticalTimeline from './Utilities/VerticalTimeline'
 import ExperienceVerticalTimeline from './Utilities/VerticalTimeline'
 // import ExperienceHorizontalTimeline from './Utilities/HorizontalTimeline'
 
 class Experiences extends Component {
     render() {
-        const {sectionOrder, positionOrder, devExp, istomExp} = this.props;
+        const {sectionOrder, positionOrder,
+            // devExp, istomExp
+        } = this.props;
         return(
             <section id="experiences">
                 <ScrollToPrevious

@@ -1,7 +1,7 @@
 import React from 'react'
 import './AppNavbar.scss'
 import logo from './logo.svg'
-import {Navbar, Nav, Button, Col} from 'react-bootstrap'
+import {Navbar, Nav, Col} from 'react-bootstrap'
 import SmoothScrollTo from './Navigation/SmoothScrollTo'
 
 

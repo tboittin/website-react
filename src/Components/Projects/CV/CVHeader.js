@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
-import PersonnalInfo from './personnalInfo'
+// import PersonnalInfo from './personnalInfo'
 import './CVHeader.scss'
 import PersonnalInfoHard from './personnalInfoHard'
 
 class CVHeader extends Component {
 
     render () {
-        const infos = this.props
+        // const infos = this.props
         return (
             <div className="hero">
                 <>

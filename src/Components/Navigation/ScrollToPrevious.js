@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {Button, Row} from 'react-bootstrap'
+import {Row} from 'react-bootstrap'
 import './ScrollToPrevious.scss'
 import {IoIosArrowDropupCircle} from 'react-icons/io'
 

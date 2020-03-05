@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import PropTypes from 'prop-types'
+// import PropTypes from 'prop-types'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './skillsList.css'
 import { Container } from 'react-bootstrap'
@@ -26,7 +26,7 @@ class SkillsListHard extends Component {
     }
     
     render () {
-        const skills = this.props
+        // const skills = this.props
         return(
             <React.Fragment>
                 <div className="skills">
