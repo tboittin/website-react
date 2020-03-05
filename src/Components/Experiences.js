@@ -5,6 +5,7 @@ import ScrollToNext from './Navigation/ScrollToNext'
 import ScrollToPrevious from './Navigation/ScrollToPrevious'
 import VerticalTimeline from './Utilities/VerticalTimeline'
 import ExperienceVerticalTimeline from './Utilities/VerticalTimeline'
+// import ExperienceHorizontalTimeline from './Utilities/HorizontalTimeline'
 
 class Experiences extends Component {
     render() {
@@ -16,10 +17,12 @@ class Experiences extends Component {
                     positionOrder={positionOrder}
                 />
                 <div className="experiencesContent">
-                    <p>My Experiences</p>
-                    <div>
-                        {/* <ExperienceVerticalTimeline
-                         /> */}
+                    <h2 className="mb-4 text-center">My Experiences</h2>
+                    
+                    <div className="timeline p-y-2">
+                        <ExperienceVerticalTimeline
+                        />
+                        {/* <ExperienceHorizontalTimeline /> */}
                     </div>
                 </div>
                 <ScrollToNext

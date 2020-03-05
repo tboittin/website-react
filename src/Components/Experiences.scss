@@ -1,8 +1,22 @@
 #experiences {
     height: 100vh;
     padding: 10vh 0;
+    
 }
 
 .experiencesContent {
     height: 75vh;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.timeline {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 60vh;
+    background-color: #e9ecef;
+    padding-left: 2.5vh;
 }

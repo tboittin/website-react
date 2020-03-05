@@ -1,5 +1,8 @@
+import React, { Component } from 'react'
+
 const VALUES = [ /* The date strings go here */ ];
-export default class ExperienceHorizontalTimeline extends React.Component {
+
+export default class ExperienceHorizontalTimeline extends Component {
   state = { value: 0, previous: 0 };
 
   render() {
