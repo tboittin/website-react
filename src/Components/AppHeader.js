@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
 import './AppHeader.scss'
-import {Jumbotron} from 'react-bootstrap'
+import {Jumbotron, Image, Col} from 'react-bootstrap'
 import ScrollToNext from './Navigation/ScrollToNext'
 import ScrollToPrevious from './Navigation/ScrollToPrevious'
 import ModalCV from './Modals/ModalCV'
+// import headerPic from '../img/headerPic.jpeg'
 
 class AppHeader extends Component {
     render() {
@@ -15,6 +16,7 @@ class AppHeader extends Component {
                         sectionOrder={sectionOrder}
                         positionOrder={positionOrder}
                     />
+                    
                     <Jumbotron id="JumbotronHeader">
                         <div id="JumbotronText">
                             <h1>Hi I'm Thomas</h1>
@@ -28,11 +30,12 @@ class AppHeader extends Component {
                                 tools={tools}
                             />
                         </div>
-                        <ScrollToNext
-                            sectionOrder={sectionOrder}
-                            positionOrder={positionOrder}
-                        />
+                        
                     </Jumbotron>
+                    <ScrollToNext
+                        sectionOrder={sectionOrder}
+                        positionOrder={positionOrder}
+                    />
                 </section>
             </header>
         )

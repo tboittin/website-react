@@ -1,5 +1,11 @@
 #AppHeader {
     height: 100vh;
+    background-image: url('../img/headerPic.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 10vw -45vh;
+    background-color: #999bf0;
+    background-attachment: fixed;
 }
 
 #header {
@@ -7,9 +13,15 @@
 }
 
 #JumbotronHeader {
-    height: 100%;
+    position: relative;
+    top:25%;
+    height: 40%;
+    width: 100%;
+    background-color: rgba(233, 236, 239, .8);
+    margin-bottom: 50vh;
 }
 
 #JumbotronText {
-    margin: 25vh 10vw;
+    margin: 0 10vw;
+
 }
