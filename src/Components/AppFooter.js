@@ -11,7 +11,7 @@ function AppFooter() {
             className="text-white justify-content-center"
         >
             <div className="copyright">
-                Copyright © Thomas Boittin 2019
+                Copyright © Thomas Boittin 2020
             </div>
         </Navbar>
     )

@@ -19,7 +19,10 @@ class Contact extends Component {
                 <div className="contactContent">
                     <Row>
                         <Col
-                            xs={6}
+                            xs={{
+                                span:4,
+                                offset:2
+                            }}
                             className="text-center align-content-center"
                         >
                             <h3 className="p-5">LOCATION</h3>
@@ -27,7 +30,7 @@ class Contact extends Component {
                             
                         </Col>
                         <Col
-                            xs={6}
+                            xs={4}
                             className="text-center"
                         >
                             <h3 className="p-5">CONTACT</h3>
