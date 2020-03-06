@@ -1,7 +1,7 @@
 import React from 'react'
 import './AppNavbar.scss'
 import logo from './logo.svg'
-import {Navbar, Nav, Col} from 'react-bootstrap'
+import {Navbar, Nav, Col, Image} from 'react-bootstrap'
 import SmoothScrollTo from './Navigation/SmoothScrollTo'
 
 
@@ -14,7 +14,10 @@ function AppNavbar() {
             className="appNavbar"
         >
             <Col lg={1} className="justify-content-start">
-                <Navbar.Brand href="#home"><img src={logo} className="App-logo" alt="logo" /> Logo</Navbar.Brand>
+                <Navbar.Brand href="#home" className="d-inline-flex">
+                    <img src={logo} className="App-logo" alt="logo"/>
+                    <p className="logoName pt-2">Thomas Boittin</p>
+                </Navbar.Brand>
             </Col>
             <Col lg={{span: 3, offset:6}}>
                 <Nav className="mr-auto smooth-scroll">
