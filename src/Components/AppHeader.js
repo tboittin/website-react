@@ -29,6 +29,7 @@ class AppHeader extends Component {
                                 skills={skills}
                                 tools={tools}
                             />
+                            <div className="text-white text-right hiddenText">It's actually me</div>
                         </div>
                         
                     </Jumbotron>

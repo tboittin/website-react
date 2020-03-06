@@ -1,9 +1,9 @@
 #AppHeader {
     height: 100vh;
-    background-image: url('../img/headerPic.jpeg');
-    background-size: cover;
+    background-image: url('../img/headerPic2.jpg');
+    background-size: 220%;
     background-repeat: no-repeat;
-    background-position: 10vw -45vh;
+    background-position: -55vw -40vh;
     background-color: #999bf0;
     background-attachment: fixed;
 }
@@ -23,5 +23,8 @@
 
 #JumbotronText {
     margin: 0 10vw;
+}
 
+.hiddenText{
+    padding-top: 8vh;
 }
