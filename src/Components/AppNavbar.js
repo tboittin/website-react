@@ -11,11 +11,12 @@ function AppNavbar() {
             bg="dark"
             variant="dark"
             sticky="top"
+            className="appNavbar"
         >
             <Col lg={1} className="justify-content-start">
                 <Navbar.Brand href="#home"><img src={logo} className="App-logo" alt="logo" /> Logo</Navbar.Brand>
             </Col>
-            <Col lg={{span: 3, offset:7}}>
+            <Col lg={{span: 3, offset:6}}>
                 <Nav className="mr-auto smooth-scroll">
                     <Nav.Link onClick={() => SmoothScrollTo('AppHeader')}>
                         About
