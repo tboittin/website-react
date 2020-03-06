@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import {Row} from 'react-bootstrap'
 import './ScrollToNext.scss'
-import {IoIosArrowDropdownCircle} from 'react-icons/io'
+import {IoIosArrowDown} from 'react-icons/io'
 
 class ScrollToNext extends Component {
     constructor(props) {
@@ -41,13 +41,13 @@ class ScrollToNext extends Component {
             <div className="scrollToNext d-block">
                 {visible && (
                     <Row className="d-flex justify-content-center align-self-end">
-                        <div style={{color:'#007bff'}}>
-                            <IoIosArrowDropdownCircle
+                        <div style={{color:'#343a40'}}>
+                            <IoIosArrowDown
                                 onClick={() => this.handleScrollToNext()}
                                 size={40}
                             >
                                 Next
-                            </ IoIosArrowDropdownCircle>
+                            </ IoIosArrowDown>
                         </div>
                     </Row>
                 )}

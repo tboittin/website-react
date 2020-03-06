@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import {Row} from 'react-bootstrap'
 import './ScrollToPrevious.scss'
-import {IoIosArrowDropupCircle} from 'react-icons/io'
+import {IoIosArrowUp} from 'react-icons/io'
 
 class ScrollToPrevious extends Component {
     constructor(props) {
@@ -53,13 +53,13 @@ class ScrollToPrevious extends Component {
             <div className="scrollToPrevious">
                 {visible && (
                     <Row className="d-flex justify-content-center align-self-start">
-                        <div style={{color:'#007bff'}}>
-                            <IoIosArrowDropupCircle
+                        <div style={{color:'#343a40'}}>
+                            <IoIosArrowUp
                                 onClick={() => this.handleScrollToPrevious()}
                                 size={40}
                             >
                                 Previous
-                            </ IoIosArrowDropupCircle>
+                            </ IoIosArrowUp>
                         </div>
                     </Row>
                 )}
